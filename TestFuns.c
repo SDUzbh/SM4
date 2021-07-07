@@ -2,7 +2,6 @@
 #include <string.h>
 #include "TestFuns.h"
 
-//
 
 
 int Test_SM4ECB(void)

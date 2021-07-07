@@ -1,5 +1,6 @@
 #ifndef _H_SM4_NEON_
 #define _H_SM4_NEON_
+
 #include <stdio.h>
 #include <stdint.h>
 #include <arm_neon.h> //必须
@@ -66,7 +67,7 @@ void _Dec_SM4_Neon(u8i *cp, uint8x16_t *RK, u8i *out);
 
 
 typedef struct _SM4_CTX_Std {
-  uint8x16_t T_RK[32];
+  uint8x16_t T_RK[32];//8*16
   u8i Sm4ALIGN(IV[16]);
   u32i iMode;
 } SM4_CTX_Std;
